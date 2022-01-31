@@ -1,13 +1,21 @@
 import sys
+import os
 import streamlit as st
 import pickle
 import numpy as np
 import warnings
 warnings.filterwarnings('ignore')
 
+absolute_path = os.path.abspath(__file__)
+# print(absolute_path)
+file_directory = os.path.dirname(absolute_path)
+# print(file_directory)
+file_path = os.path.join(
+    file_directory, 'linear_regression_model_pickle_Colab')
 
+# print(file_path)
 # Reading the model pickle file
-with open('C:/Shaji/Python_Practice/Stream_Lit_Model_Linear_Regression/linear_regression_model_pickle_Colab', 'rb') as f:
+with open(file_path, 'rb') as f:
     new_model = pickle.load(f)
 
 
