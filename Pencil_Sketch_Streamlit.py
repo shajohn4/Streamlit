@@ -2,7 +2,6 @@ import streamlit as st
 import numpy as np
 from PIL import Image
 import cv2
-# from google.colab.patches import cv2_imshow
 
 
 def dodgeV2(x, y):
