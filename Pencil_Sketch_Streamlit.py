@@ -41,6 +41,5 @@ else:
     st.write("Sketch Image")
     st.image(sketch_image, use_column_width=True)
 
-st.write("Courtesy is")
-st.write(
-    " 1LittleCoder and (https: // www.askaswiss.com/2016/01/how-to-create-pencil-sketch-opencv-python.html")
+st.write("Courtesy:-")
+st.write("1LittleCoder and AskASwiss")
