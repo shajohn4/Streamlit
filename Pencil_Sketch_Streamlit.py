@@ -17,6 +17,16 @@ def pencilsketch(input_image):
     return(final_img)
 
 
+hide_st_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            </style>
+            """
+
+st.markdown(hide_st_style, unsafe_allow_html=True)
+
 st.title("This is a pencil sketcher program")
 st.write("Convert your picture into pencil sketch")
 img = st.sidebar.file_uploader("Upload Your Image", type=['jpeg', 'jpg'])
@@ -30,3 +40,7 @@ else:
     st.image(img, use_column_width=True)
     st.write("Sketch Image")
     st.image(sketch_image, use_column_width=True)
+
+st.write("Courtesy is")
+st.write(
+    " 1LittleCoder and (https: // www.askaswiss.com/2016/01/how-to-create-pencil-sketch-opencv-python.html")
